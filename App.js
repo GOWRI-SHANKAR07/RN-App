@@ -1,12 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import OnBoardingScreen from './src/screens/OnBoardingScreen'
-import Svg, { SvgUri } from 'react-native-svg';
-import SVGImage from './assets/images/image.svg'
+import StackScreens from './src/Stack/StackScreens';
 
 function App() {
   return (
-    <OnBoardingScreen />
+    <SafeAreaView style={styles.conatiner}>
+      <StackScreens />
+    </SafeAreaView>
   )
 }
 
@@ -15,8 +15,5 @@ export default App
 const styles = StyleSheet.create({
   conatiner: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff'
   }
 })
